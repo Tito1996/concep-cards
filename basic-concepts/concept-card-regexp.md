@@ -1,5 +1,4 @@
 **TARJETA DE ESTUDIO – Expresiones Regulares (RegExp)**
-**Formato:** A6
 
 ---
 
