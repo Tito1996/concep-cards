@@ -1,4 +1,4 @@
-## 🧠 TARJETA DE ESTUDIO – FUNCIONES / MÉTODOS (A6)
+## 🧠 TARJETA DE ESTUDIO – FUNCIONES / MÉTODOS
 
 ### ¿Qué es una función / método?
 
