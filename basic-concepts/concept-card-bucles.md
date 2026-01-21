@@ -1,4 +1,4 @@
-## 🧠 TARJETA DE ESTUDIO – BUCLES / LOOPS (A6)
+## 🧠 TARJETA DE ESTUDIO – BUCLES
 
 ### ¿Qué es un bucle?
 
