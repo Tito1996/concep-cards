@@ -1,4 +1,4 @@
-## 🧠 TARJETA DE ESTUDIO – ENTRADA Y SALIDA DE DATOS (A6)
+## 🧠 TARJETA DE ESTUDIO – ENTRADA Y SALIDA DE DATOS
 
 ### ¿Qué es la entrada y salida de datos?
 
