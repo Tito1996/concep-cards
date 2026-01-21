@@ -1,4 +1,4 @@
-## 🧠 TARJETA DE ESTUDIO – CONDICIONALES (A6)
+## 🧠 TARJETA DE ESTUDIO – CONDICIONALES
 
 ### ¿Qué son los condicionales?
 
