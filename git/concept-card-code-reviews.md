@@ -1,5 +1,4 @@
 **TARJETA DE ESTUDIO – Code Reviews y Pull Requests**
-**Formato:** A6
 
 ---
 
