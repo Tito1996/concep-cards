@@ -1,105 +1,79 @@
+## 🧠 TARJETA DE ESTUDIO – MANEJO BÁSICO DE ERRORES
 
-🧠 TARJETA DE ESTUDIO – MANEJO BÁSICO DE ERRORES (A6)
+### ¿Qué es manejar errores?
 
-¿Qué es manejar errores?
+Es **anticipar, detectar y responder** a situaciones donde algo puede salir mal, sin que el sistema falle de forma descontrolada.
 
-Es anticipar, detectar y responder a situaciones donde algo puede salir mal, sin que el sistema falle de forma descontrolada.
-
-En simple: 👉 el sistema no asume que todo va a salir bien.
-
-
----
-
-Tipos de errores comunes
-
-Datos de entrada inválidos
-
-Recursos inexistentes (no encontrado)
-
-Estados inesperados
-
-Errores de sistema (DB, red, servicios externos)
-
-
-No todos los errores son bugs: 👉 muchos son escenarios normales.
-
+En simple:
+👉 *el sistema no asume que todo va a salir bien.*
 
 ---
 
-Objetivo del manejo de errores
+### Tipos de errores comunes
 
-Evitar caídas del sistema
+* Datos de entrada inválidos
+* Recursos inexistentes (no encontrado)
+* Estados inesperados
+* Errores de sistema (DB, red, servicios externos)
 
-Mantener consistencia de datos
-
-Dar respuestas claras
-
-Facilitar el debug
-
-
+No todos los errores son bugs:
+👉 muchos son **escenarios normales**.
 
 ---
 
-Manejo básico (conceptual)
+### Objetivo del manejo de errores
 
-Detectar el error lo antes posible
+* Evitar caídas del sistema
+* Mantener consistencia de datos
+* Dar respuestas claras
+* Facilitar el debug
 
-Interrumpir el flujo si no se puede continuar
+---
 
-Comunicar el error de forma clara
+### Manejo básico (conceptual)
 
+* **Detectar el error** lo antes posible
+* **Interrumpir el flujo** si no se puede continuar
+* **Comunicar el error** de forma clara
 
 Ejemplo mental:
 
 > “Si no puedo continuar de forma segura, corto y aviso.”
 
+---
 
+### Errores vs Excepciones
 
+* **Error:** el problema en sí
+* **Excepción:** el mecanismo para manejarlo
+
+No todas las excepciones deben atraparse:
+👉 algunas deben propagarse.
 
 ---
 
-Errores vs Excepciones
+### Errores comunes en entrevistas
 
-Error: el problema en sí
-
-Excepción: el mecanismo para manejarlo
-
-
-No todas las excepciones deben atraparse: 👉 algunas deben propagarse.
-
+* Ignorar errores
+* Capturar todo “por las dudas”
+* Ocultar errores reales
+* Devolver siempre éxito aunque falle algo
 
 ---
 
-Errores comunes en entrevistas
+### Buena práctica clave
 
-Ignorar errores
+Manejar el error **donde tenga sentido**, no donde aparezca.
 
-Capturar todo “por las dudas”
-
-Ocultar errores reales
-
-Devolver siempre éxito aunque falle algo
-
-
-
----
-
-Buena práctica clave
-
-Manejar el error donde tenga sentido, no donde aparezca.
-
-Ejemplo: 👉 validar entrada antes de procesar
+Ejemplo:
+👉 validar entrada antes de procesar
 👉 manejar reglas de negocio en la lógica
 👉 dejar errores técnicos al framework
 
-
 ---
 
-Frase que suma puntos
+### Frase que suma puntos
 
 > “Un error bien manejado es parte del flujo normal del sistema.”
-
-
-
 
 ---
