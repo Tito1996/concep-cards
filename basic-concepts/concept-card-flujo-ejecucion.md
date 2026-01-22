@@ -1,116 +1,86 @@
+## 🧠 TARJETA DE ESTUDIO – CONTROL DEL FLUJO DE EJECUCIÓN (A6)
 
-🧠 TARJETA DE ESTUDIO – CONTROL DEL FLUJO DE EJECUCIÓN (A6)
+### ¿Qué es el control del flujo?
 
-¿Qué es el control del flujo?
+El control del flujo define **en qué orden se ejecuta el código** y **cuándo se detiene, continúa o salta** a otra parte.
 
-El control del flujo define en qué orden se ejecuta el código y cuándo se detiene, continúa o salta a otra parte.
-
-En simple: 👉 decide qué se ejecuta, cuándo y cuántas veces.
-
-
----
-
-Elementos clave del control del flujo
-
-Condicionales (if, switch)
-
-Bucles (for, while)
-
-Palabras clave de control:
-
-return
-
-break
-
-continue
-
-
-
+En simple:
+👉 *decide qué se ejecuta, cuándo y cuántas veces.*
 
 ---
 
-return
+### Elementos clave del control del flujo
 
-Finaliza la ejecución de una función
+* Condicionales (`if`, `switch`)
+* Bucles (`for`, `while`)
+* Palabras clave de control:
 
-Puede devolver un valor o no
-
-Se usa para salir temprano
-
-
-Buena práctica: 👉 usar return temprano reduce if anidados y mejora legibilidad.
-
+  * `return`
+  * `break`
+  * `continue`
 
 ---
 
-break
+### `return`
 
-Corta la ejecución de un bucle o switch
+* Finaliza la ejecución de una función
+* Puede devolver un valor o no
+* Se usa para **salir temprano**
 
-Se usa cuando ya no tiene sentido seguir iterando
-
-
-Error común: 👉 abusar de break vuelve el flujo difícil de seguir.
-
-
----
-
-continue
-
-Salta a la siguiente iteración del bucle
-
-Evita ejecutar el resto del bloque actual
-
-
-Útil para: 👉 ignorar casos inválidos sin anidar condiciones.
-
+Buena práctica:
+👉 usar `return` temprano reduce `if` anidados y mejora legibilidad.
 
 ---
 
-Idea clave de entrevista
+### `break`
 
-> El control del flujo debe ser predecible y fácil de leer.
+* Corta la ejecución de un bucle o `switch`
+* Se usa cuando ya no tiene sentido seguir iterando
 
-
-
-Código que “funciona” pero es confuso: 🚫 mala señal en entrevistas.
-
-
----
-
-Errores comunes
-
-if y bucles profundamente anidados
-
-Muchos break y continue
-
-Flujos difíciles de seguir mentalmente
-
-No entender cuándo termina una función
-
-
+Error común:
+👉 abusar de `break` vuelve el flujo difícil de seguir.
 
 ---
 
-Buena práctica
+### `continue`
 
-Preferir flujos simples
+* Salta a la siguiente iteración del bucle
+* Evita ejecutar el resto del bloque actual
 
-Usar return temprano
-
-Reducir anidamientos
-
-Pensar el flujo antes de escribir código
-
-
+Útil para:
+👉 ignorar casos inválidos sin anidar condiciones.
 
 ---
 
-Frase que suma puntos
+### Idea clave de entrevista
+
+> El control del flujo debe ser **predecible y fácil de leer**.
+
+Código que “funciona” pero es confuso:
+🚫 mala señal en entrevistas.
+
+---
+
+### Errores comunes
+
+* `if` y bucles profundamente anidados
+* Muchos `break` y `continue`
+* Flujos difíciles de seguir mentalmente
+* No entender cuándo termina una función
+
+---
+
+### Buena práctica
+
+* Preferir flujos simples
+* Usar `return` temprano
+* Reducir anidamientos
+* Pensar el flujo antes de escribir código
+
+---
+
+### Frase que suma puntos
 
 > “Un flujo claro es más importante que un flujo ingenioso.”
-
-
-
 
 ---
