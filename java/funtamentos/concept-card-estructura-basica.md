@@ -1,4 +1,4 @@
-## 🧠 TARJETA DE ESTUDIO – ESTRUCTURA BÁSICA DE UN PROGRAMA JAVA (A6)
+## 🧠 TARJETA DE ESTUDIO – ESTRUCTURA BÁSICA DE UN PROGRAMA JAVA
 
 ### ¿Cómo está organizado un programa Java?
 
