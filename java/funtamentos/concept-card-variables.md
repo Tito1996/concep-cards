@@ -1,4 +1,4 @@
-## 🧠 TARJETA DE ESTUDIO – VARIABLES Y ALCANCE (JAVA) (A6)
+## 🧠 TARJETA DE ESTUDIO – VARIABLES Y ALCANCE (JAVA)
 
 ### ¿Qué es una variable?
 
