@@ -1,4 +1,4 @@
-## 🧠 TARJETA DE ESTUDIO – TIPOS PRIMITIVOS Y `String` (JAVA) (A6)
+## 🧠 TARJETA DE ESTUDIO – TIPOS PRIMITIVOS Y `String` (JAVA)
 
 ### Tipos primitivos en Java
 
