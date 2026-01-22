@@ -1,4 +1,4 @@
-## TARJETA DE ESTUDIO – Concurrencia en Java**
+## TARJETA DE ESTUDIO – Concurrencia en Java
 
 ---
 
