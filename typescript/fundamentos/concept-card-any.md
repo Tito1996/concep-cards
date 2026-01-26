@@ -1,4 +1,4 @@
-# 📘 TypeScript — any (A5)
+# 📘 TypeScript — any
 
 ### `any`
 
