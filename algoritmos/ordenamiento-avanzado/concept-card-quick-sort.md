@@ -1,121 +1,97 @@
-# QuickSort
+# **Algoritmo Quick Sort**
 
 ---
 
 ## ¿Qué es?
-QuickSort es un **algoritmo de ordenamiento** que utiliza el paradigma **Divide y Vencerás** para ordenar una colección de elementos comparándolos con un **pivote**.
+
+**Quick Sort** es un algoritmo de ordenamiento **eficiente** basado en **divide y vencerás**, que ordena una lista **particionándola** alrededor de un elemento llamado **pivote**.
 
 ---
 
 ## Idea Clave
-Seleccionar un pivote, **particionar** el arreglo en elementos menores y mayores que él, y **aplicar recursión** sobre cada subarreglo.
+
+> Coloca el pivote en su posición correcta y ordena **recursivamente** los elementos menores y mayores.
 
 ---
 
-## Componentes Principales
-- **Pivote**: elemento de referencia.
-- **Partición**: reorganización del arreglo alrededor del pivote.
-- **Recursión**: ordenamiento de subarreglos.
-- **Intercambio (swap)**: movimiento de elementos.
+## Cómo Funciona
+
+1. Elegir un **pivote**.
+2. Reordenar la lista: menores a la izquierda, mayores a la derecha.
+3. El pivote queda en su posición final.
+4. Aplicar Quick Sort a cada sublista.
 
 ---
 
-## Manejo de Colisiones
-No existen colisiones como en hashing.  
-El caso equivalente es el **tratamiento de elementos iguales al pivote**, que depende de la implementación.
+## Elección del Pivote
+
+* Primer elemento
+* Último elemento
+* Elemento central
+* **Aleatorio** (reduce el peor caso)
 
 ---
 
-## Operaciones Básicas
-- Comparaciones
-- Intercambios
-- División del arreglo
-- Llamadas recursivas
-
----
-
-## Complejidad
-- **Mejor caso**: O(n log n)
-- **Promedio**: O(n log n)
-- **Peor caso**: O(n²)
-- **Espacio**: O(log n) (in-place)
-
----
-
-## Ventajas
-- Muy rápido en la práctica
-- Uso eficiente de memoria
-- Implementación flexible
-
----
-
-## Desventajas
-- No es estable
-- Peor caso cuadrático
-- Sensible a la elección del pivote
-
----
-
-## Ejemplos de Uso
-- Ordenamiento de grandes arreglos
-- Algoritmos internos de bibliotecas estándar
-- Sistemas con memoria limitada
-
----
-
-## Implementaciones Comunes
-- Pivote fijo
-- Pivote aleatorio
-- Median-of-three
-- Introsort (QuickSort + HeapSort)
-
----
-
-## Comparación Rápida
-- **QuickSort vs MergeSort**: menos memoria, no estable
-- **QuickSort vs HeapSort**: mejor rendimiento promedio
-- **QuickSort vs BubbleSort**: muchísimo más eficiente
-
----
-
-## Ejemplo en Java
+## Ejemplo (Java)
 
 ```java
-public class QuickSort {
-
-    public static void quickSort(int[] arr, int low, int high) {
-        if (low < high) {
-            int pivotIndex = partition(arr, low, high);
-            quickSort(arr, low, pivotIndex - 1);
-            quickSort(arr, pivotIndex + 1, high);
-        }
-    }
-
-    private static int partition(int[] arr, int low, int high) {
-        int pivot = arr[high]; // pivote
-        int i = low - 1;
-
-        for (int j = low; j < high; j++) {
-            if (arr[j] <= pivot) {
-                i++;
-                swap(arr, i, j);
-            }
-        }
-
-        swap(arr, i + 1, high);
-        return i + 1;
-    }
-
-    private static void swap(int[] arr, int i, int j) {
-        int temp = arr[i];
-        arr[i] = arr[j];
-        arr[j] = temp;
+void quickSort(int[] arr, int low, int high) {
+    if (low < high) {
+        int p = particion(arr, low, high);
+        quickSort(arr, low, p - 1);
+        quickSort(arr, p + 1, high);
     }
 }
 ```
 
 ---
 
-### Idea Clave Final
+## Complejidad
 
-QuickSort es eficiente porque reduce el problema ordenando localmente alrededor de un pivote, logrando gran velocidad con bajo uso de memoria.
+* **Mejor caso**: O(n log n)
+* **Caso promedio**: O(n log n)
+* **Peor caso**: O(n²) (mal pivote)
+
+---
+
+## Uso de Memoria
+
+* Algoritmo **in-place**.
+* Complejidad espacial: **O(log n)** (recursión).
+
+---
+
+## Ventajas
+
+* Muy rápido en la práctica.
+* No requiere memoria adicional significativa.
+* Amplio uso en librerías estándar.
+
+---
+
+## Desventajas
+
+* No es estable.
+* Peor caso O(n²) si el pivote es malo.
+
+---
+
+## Cuándo Usarlo
+
+* Listas grandes.
+* Cuando el rendimiento es prioritario.
+* Cuando no se requiere estabilidad.
+
+---
+
+## Comparación Rápida
+
+* **Quick Sort**: rápido en promedio, in-place.
+* **Merge Sort**: estable, requiere memoria extra.
+* **Heap Sort**: O(n log n) garantizado.
+
+---
+
+## Idea Clave Final
+
+> Quick Sort es rápido porque **reduce el problema en cada partición**.
